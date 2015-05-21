@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" alignment="left" text="Label" textAlignment="center" id="kcd-M0-0XB"/>
+                        <button width="1" alignment="left" title="Up" id="GEB-VF-rqT">
+                            <connections>
+                                <action selector="upButtonClicked" destination="AgC-eL-Hgc" id="9NP-wJ-qVN"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Down" id="ToM-4t-dro">
+                            <connections>
+                                <action selector="downButotnClicked" destination="AgC-eL-Hgc" id="v3b-3J-z7K"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myLabel" destination="kcd-M0-0XB" id="gD3-kH-2Ti"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
